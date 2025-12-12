@@ -1,0 +1,171 @@
+/* Variables for easy color changes */
+:root {
+    --primary-purple: #5b30b4; /* Main button color */
+    --light-purple-bg: #f3f0f7; /* Very light purple background */
+    --border-color: #ccc;
+    --text-color: #333;
+    --link-color: #5b30b4;
+    --gray-text: #777;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-purple-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header and Logo */
+.logo {
+    margin-bottom: 20px;
+}
+
+.welcome-header {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.subtitle {
+    color: var(--gray-text);
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; /* Important for padding/width */
+}
+
+.password-group {
+    display: flex;
+    align-items: center;
+}
+
+.password-group input {
+    flex-grow: 1;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    color: var(--gray-text);
+    /* Aligning with the text in the input */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 5px;
+}
+
+.btn-login {
+    background-color: var(--primary-purple);
+    color: white;
+    margin-bottom: 15px;
+}
+
+.btn-login:hover {
+    background-color: #4a2592; /* Darker shade */
+}
+
+.btn-signup {
+    background-color: white;
+    color: var(--primary-purple);
+    border: 2px solid var(--primary-purple);
+}
+
+.btn-signup:hover {
+    background-color: var(--light-purple-bg);
+}
+
+/* Login Options */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    color: var(--gray-text);
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+    /* Custom styling for checkbox might be needed for exact match */
+}
+
+.forgot-link a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Divider */
+.divider {
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.signup-prompt {
+    margin-bottom: 15px;
+    color: var(--gray-text);
+}
+
+/* Footer Links */
+.footer-links {
+    font-size: 0.75em;
+    color: var(--gray-text);
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+.footer-links a {
+    color: var(--gray-text);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 5px;
+}

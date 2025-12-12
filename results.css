@@ -1,0 +1,410 @@
+/* PTE Academic Score Report Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.report-container {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Header Section */
+.report-header {
+    background: linear-gradient(135deg, #00b0b9 0%, #1e88a8 100%);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pearson-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo-icon {
+    background-color: white;
+    color: #00b0b9;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo-text {
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.header-title {
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.divider {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.report-code {
+    background-color: #f0f0f0;
+    padding: 8px 30px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+}
+
+/* Candidate Photo Section */
+.candidate-photo-section {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.photo-placeholder {
+    width: 90px;
+    height: 110px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.candidate-name-box {
+    flex: 1;
+}
+
+.candidate-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.candidate-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-row {
+    font-size: 10px;
+    display: flex;
+    gap: 4px;
+}
+
+.detail-row .label {
+    color: #666;
+    font-weight: bold;
+}
+
+.detail-row .value {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Section Styling */
+.section {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    background-color: #fff;
+}
+
+.section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+}
+
+/* Communicative Skills Circles */
+.skills-circles {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.skill-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.circle {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 3px solid #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+}
+
+.circle.highlighted {
+    border-color: #ffd700;
+    background-color: #fffef0;
+}
+
+.skill-label {
+    font-size: 11px;
+    color: #000;
+    text-align: center;
+}
+
+/* Overall Score Display */
+.overall-score {
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Skills Breakdown Bars */
+.skill-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-bar-item {
+    display: grid;
+    grid-template-columns: 60px 30px 1fr;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+}
+
+.bar-label {
+    color: #666;
+    text-align: left;
+}
+
+.bar-value {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+.bar-container {
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+.bar {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.listening-bar {
+    background-color: #00b0b9;
+}
+
+.reading-bar {
+    background-color: #ffd700;
+}
+
+.speaking-bar {
+    background-color: #666;
+}
+
+.writing-bar {
+    background-color: #9b30b4;
+}
+
+.score-range-indicator {
+    position: relative;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.range-marker {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background-color: #666;
+    top: 0;
+}
+
+/* Overall Score Circle (Large) */
+.overall-score-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.large-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #9b30b4 0%, #7020a0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 8px rgba(155, 48, 180, 0.3);
+}
+
+.score-text-large {
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.overall-label {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* Information Display */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    font-size: 10px;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info-row.full-width {
+    grid-column: 1 / -1;
+}
+
+.info-label {
+    color: #666;
+    font-weight: bold;
+}
+
+.info-value {
+    color: #000;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 10px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.info-item .label {
+    color: #666;
+    font-weight: bold;
+}
+
+.info-item .value {
+    color: #000;
+    font-weight: normal;
+}
+
+.test-info-section {
+    margin-top: auto;
+}
+
+/* Footer */
+.report-footer {
+    background: linear-gradient(135deg, #00b0b9 0%, #1e88a8 100%);
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transform: rotate(180deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-circles {
+        flex-wrap: wrap;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
